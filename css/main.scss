@@ -1,0 +1,56 @@
+@import './components/variables.scss';
+@import './components/header.scss';
+@import './components/cards.scss';
+@import './components/footer.scss';
+
+*{
+    padding: 0;
+    outline: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #efefef;
+    background-color: $body-backgroung-color;
+    color: $color-font;
+    font-family: $text-font;
+}
+
+h1, h2{
+    font-family: $title-font;
+}
+
+a{
+    text-decoration: none;
+    color: $link-color;
+    font-weight: $font-weight-semi-bold;
+}
+
+.img-fluid{
+    max-width: 100%;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and(max-width:768px){
+    [class*="col-"]{
+        width: 100%;
+    }
+}

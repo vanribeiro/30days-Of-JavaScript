@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap");
+.header .logo h1 {
+  background-color: #411D59;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.75em;
+  margin-top: 50px;
+  transform: rotate(-5deg);
+}
+.header .logo h1 a {
+  color: #F28379;
+}
+.header .logo p {
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .header .logo {
+    margin-bottom: 40px;
+  }
+  .header .text {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .header .logo {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .logo {
+    width: 40%;
+    margin-bottom: 25px;
+    padding: 15px;
+  }
+  .header .logo h1 {
+    font-size: 2em;
+    width: max-content;
+  }
+  .header .text {
+    width: 60%;
+    margin-left: 50px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header .logo {
+    width: 40%;
+    margin-right: 50px;
+  }
+  .header .logo h1 {
+    font-size: 3em;
+  }
+  .header .text {
+    width: 60%;
+  }
+}
+.main-content {
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+.main-content .container {
+  background-color: #F28379;
+  padding: 15px;
+}
+.main-content .container .row .card {
+  margin: 10px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px #000000;
+  text-align: center;
+}
+.main-content .container .row .card main {
+  padding: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .main-content .row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+footer {
+  text-align: center;
+}
+footer .container {
+  border-top: 1px solid #8c8c8c;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+* {
+  padding: 0;
+  outline: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+  background-color: #ebebeb;
+  color: #160a26;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Bebas Neue", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #A65198;
+  font-weight: 600;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  [class*=col-] {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
