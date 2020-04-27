@@ -1,7 +1,5 @@
 html {
   font-size: 10px;
-  background: url(https://i.imgur.com/b9r5sEL.jpg) bottom center;
-  background-size: cover;
 }
 
 body,html {
@@ -10,12 +8,11 @@ body,html {
   font-family: sans-serif;
 }
 
-.keys {
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
+body{
+  background-image: url('./img/people.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 
 .key {
@@ -48,4 +45,29 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+.keys {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 600px){
+  .keys{
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 601px){
+  .keys{
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .keys .row{
+    display: flex;
+    justify-content: center;
+  }
 }
