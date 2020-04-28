@@ -1,5 +1,9 @@
 html {
   font-size: 10px;
+  background-image: url('./img/people.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 
 body,html {
@@ -8,21 +12,16 @@ body,html {
   font-family: sans-serif;
 }
 
-body{
-  background-image: url('./img/people.jpg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-}
 
 .key {
+  cursor: pointer;
   border: .4rem solid black;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
   transition: all .07s ease;
-  width: 10rem;
+  width: 7rem;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.4);
@@ -57,6 +56,9 @@ kbd {
 
   .keys{
     justify-content: space-around;
+    margin: 1rem;
+    font-size: 1.2rem;
+    padding: .5rem .25rem;
   }
   
 }
