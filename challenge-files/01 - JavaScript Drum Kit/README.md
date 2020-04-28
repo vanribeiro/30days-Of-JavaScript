@@ -88,3 +88,7 @@ With this information, we can take the property name to discover when to remove 
 That's all folks! 😃
 
 Thanks WesBos to share this with us! 💖
+
+## About my adjustments on it
+
+I'm trying to transform it in a clickable application to be used on the cell phone. 😁
