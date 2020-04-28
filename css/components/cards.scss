@@ -2,14 +2,31 @@
     padding-top: 5%;
     padding-bottom: 10%;
     .container{
-        background-color: $main-background-color;
+        
         padding: 15px;
         .row{
+            .col-4{
+                background-color: $main-background-color;
+            }
+
             .card{
                 margin: 10px;
                 background-color: $backgroung-card;
                 box-shadow: 1px 1px 5px #000000;
                 text-align: center;
+
+                figure a{
+                    color: $color-font;
+                }
+
+                figcaption{
+                    padding: 10px;
+
+                    h2{
+                        font-size: 1.5em;
+                    }
+                }
+
                 main{
                     padding: 15px;
                 }

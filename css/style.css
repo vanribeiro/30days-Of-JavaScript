@@ -64,14 +64,25 @@
   padding-bottom: 10%;
 }
 .main-content .container {
-  background-color: #F28379;
   padding: 15px;
+}
+.main-content .container .row .col-4 {
+  background-color: #F28379;
 }
 .main-content .container .row .card {
   margin: 10px;
   background-color: #ffffff;
   box-shadow: 1px 1px 5px #000000;
   text-align: center;
+}
+.main-content .container .row .card figure a {
+  color: #160a26;
+}
+.main-content .container .row .card figcaption {
+  padding: 10px;
+}
+.main-content .container .row .card figcaption h2 {
+  font-size: 1.5em;
 }
 .main-content .container .row .card main {
   padding: 15px;
@@ -97,6 +108,7 @@ footer .container {
   border-top: 1px solid #8c8c8c;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-size: 0.875em;
 }
 
 * {
