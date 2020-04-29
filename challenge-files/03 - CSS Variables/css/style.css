@@ -1,0 +1,52 @@
+:root{
+    --base: #eca769;
+    --spacing: 10px;
+    --blur: 10px;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+
+  img{
+    background-color: var(--base);
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    max-width: 100%;
+  }
+
+  .hl{
+    color: var(--base);
+  }
+
+  .container{
+    padding-top: 2%;
+    width: 80%;
+    margin: auto;
+  }
+
+  body {
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+  }
+
+  .controls {
+    margin-bottom: 50px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+      body{
+        font-size: 2em;
+      }
+  }
