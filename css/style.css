@@ -70,6 +70,7 @@
   background-color: #F28379;
 }
 .main-content .container .row .card {
+  height: 90%;
   margin: 10px;
   background-color: #ffffff;
   box-shadow: 1px 1px 5px #000000;
