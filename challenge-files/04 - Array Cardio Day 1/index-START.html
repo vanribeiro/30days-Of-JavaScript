@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Array Cardio 💪</title>
 </head>
 <body>
-  <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  <div class="container">
+    <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+    <main> </main>
+    <footer>
+      <p>coded by <a href="vanribeiro.github.io/">Van Ribeiro</a></p>
+    </footer>
+  </div>
+  
   <script>
     // Get your shorts on - this is an array workout!
     // ## Array Cardio Day 1
@@ -29,9 +38,72 @@
 
     const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'];
 
+function showInventors(initial, end, inventors) {
+  let countInventors = Object.keys(inventors).length;
+  const main = document.querySelector("main");
+  const header = document.createElement("header");
+  const h1 = document.createElement("h1");
+  main.appendChild(header);
+  header.appendChild(h1);
+
+  h1.textContent = "Period:" + ` ${initial} to ${end}`;
+  for(let i = 0; i < countInventors; i++){
+      const section = document.createElement("section");
+      const id = document.createElement("span");
+      const name = document.createElement("p");
+      const year = document.createElement("p");
+      const passed = document.createElement("p");
+
+      main.appendChild(section);
+      
+
+      let x = i +1;
+      id.textContent = x;
+      name.textContent = "Name: " + inventors[i].first + " " + inventors[i].last;
+      year.textContent = "Year: " + inventors[i].year;
+      passed.textContent = "Passed: " + inventors[i].passed;
+
+      section.appendChild(id);
+      section.appendChild(name);
+      section.appendChild(year);
+      section.appendChild(passed);
+
+
+  }
+      
+}
+
+
+// showInventors(inventors);
+
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
 
+    //Long Version
+    const fifteen = inventors.filter(function (inventor) {
+      if(inventor.year >= 1500 && inventor.year < 1600 ){
+        return true;
+      } else{
+        return false;
+      }
+    });
+
+    //Short Version
+    const sixteen = inventors.filter(
+      inventor => (inventor.year >= 1600 && inventor.year < 1700));
+
+    const filterInventors = (initial, end) => {
+      return inventors.filter(inventor =>
+        (inventor.year >= initial && inventor.year < end ));
+    }
+
+    let initial = 1400;
+    let end = 1900; 
+    showInventors(initial, end, filterInventors(initial, end));
+    console.table(filterInventors(1400, 1900));
+
+
+    //---------------------------------------------------------------
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
 
