@@ -1,25 +1,30 @@
-import { filterByYear, filterByFullName } from './modules/filters.js';
-import { inventors } from './modules/datas.js';
-import showInventors from './modules/showInventors.js';
+import { filterByYear } from './modules/methods/filtering.js';
+import { mapFullNames } from './modules/methods/maping.js';
+import { sortByYear } from './modules/methods/sorting.js';
+import { reduceToTotalYears } from './modules/methods/reducing.js';
+import { inventors } from './modules/datas/datas.js';
+import {   
+    filteringInventors, 
+    mappingFullNames,
+    sortingByYear
+} from './modules/view/showingInventors.js';
 
     // Array.prototype.filter() ✅
     // 1. Filter the list of inventors for those who were born in the 1500's
-    let searchingBy = "";
-    let initial = 1500, end = 1600; 
-    let firstName = "Ada", lastName = "Lovelace";
-    showInventors(searchingBy = "Period", initial, end, filterByYear(initial, end, inventors));
-    showInventors(searchingBy = "Full Name", firstName, lastName, filterByFullName(firstName, lastName, inventors) )
-    // console.table(filterByYear(1400, 1900, inventors));
-    // console.table(filterByFullName(firstName, lastName, inventors));
+    let initial = 1400, end = 1900; 
+    filteringInventors(initial, end, filterByYear(initial, end, inventors));
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
+    mappingFullNames(mapFullNames(inventors));
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+    sortingByYear(sortByYear(inventors));
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
+    console.log(reduceToTotalYears(inventors));
 
     // 5. Sort the inventors by years lived
 

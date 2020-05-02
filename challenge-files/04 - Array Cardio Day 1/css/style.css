@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -8,15 +9,17 @@
 body{
     background-color: #efefef;
     color: #444444;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'Bebas Neue', cursive;
 }
 
 header{
-    padding-top: 15px;
+    padding-top: 10px;
     height: 50px;
     width: 100%;
-    display: flex;
-    align-items: center;
     text-align: center;
 }
 
@@ -30,20 +33,41 @@ a:hover{
     text-decoration: underline;
 }
 
+
 h1{
     width: 100%;
     margin-top: 10px;
-}
-
-h1{
+    margin-bottom: 15px;
     height: 50px;
     border-bottom: 2px solid #444444;
-    margin-bottom: 5px;
+    
 }
 
 h2{
-    border-bottom: 1px solid #444444;
+    width: 100%;
+}
+
+table{
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead{
+    background-color: #444444;
+    color: #efefef;
+}
+
+th{
     text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: #dbdbdb;
+}
+
+tr{
+    border-bottom: 1px solid #444444;
 }
 
 .container{
@@ -52,26 +76,15 @@ h2{
 }
 
 .main{
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 10%;
 }
 
-section{
+.section-datas{
     padding: 15px;
-}
-
-header h2{
-    width: 90%;
-}
-
-header span{
-    width: 10%;
-    border-bottom: 1px solid #444444;
-    text-align: right;
-}
-
-span{
-    font-weight: bold;
+    margin-top: 35px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px #444444;
 }
 
 footer{
@@ -81,33 +94,23 @@ footer{
 }
 
 footer p{
-    margin-top: 3%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+ul{
+    padding: 15px 40px;
 }
 
 @media only screen and (max-width: 600px){
 
-    .row{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
 
-    section{
-        width: 25%;
-    }
 }
 
 @media only screen and (min-width: 768px){
     
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: flex-end;
-    }
-
-    section{
-        width: 25%;
+    .using-map ul{
+        columns: 3;
     }
 
 }
