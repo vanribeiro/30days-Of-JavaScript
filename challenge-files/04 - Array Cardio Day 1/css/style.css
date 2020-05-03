@@ -18,7 +18,6 @@ h1, h2, h3{
 
 header{
     padding-top: 10px;
-    height: 50px;
     width: 100%;
     text-align: center;
 }
@@ -33,19 +32,18 @@ a:hover{
     text-decoration: underline;
 }
 
+.title-page{
+    background-color: #444;
+    color: #ebebeb;
+}
 
 h1{
     width: 100%;
     margin-top: 10px;
     margin-bottom: 15px;
     height: 50px;
-    border-bottom: 2px solid #444444;
-    
 }
 
-h2{
-    width: 100%;
-}
 
 table{
     margin-top: 20px;
@@ -87,6 +85,36 @@ tr{
     box-shadow: 1px 1px 5px #444444;
 }
 
+article{
+    margin-top: 20px;
+}
+
+article header h1{
+    border-bottom-style: dotted;
+}
+
+article main header, article main header h2, .reduced-list header h3{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+h2{
+    width: 100%;
+}
+
+code{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+code pre{
+    background-color: #444444;
+    color: #a6cca6;
+    font-size: 1em;
+    padding: 15px;
+}
+
 footer{
     width: 100%;
     border-top: 1px solid #444444;
@@ -98,19 +126,41 @@ footer p{
     margin-bottom: 1%;
 }
 
-ul{
+ul, ol{
     padding: 15px 40px;
 }
 
-@media only screen and (max-width: 600px){
+.by-oldest{
+    margin-top: 15px;
+}
 
+.using-reduce h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
 
+.original-list{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #444444;
 }
 
 @media only screen and (min-width: 768px){
     
-    .using-map ul{
+    .using-map ul, .by-alphabetically ul{
         columns: 3;
+    }
+
+    .using-reduce ol{
+        columns: 7;
+    }
+
+    .using-reduce ul{
+        columns: 5;
+    }
+
+    code pre{
+        text-align: center;
+        font-size: 1.5em;
     }
 
 }

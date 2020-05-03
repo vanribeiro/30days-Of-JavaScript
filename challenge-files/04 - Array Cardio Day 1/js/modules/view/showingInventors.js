@@ -16,7 +16,7 @@ function filteringInventors(initial, end, inventors) {
     const thPassed = document.createElement("th");
 
     content.appendChild(header);
-      header.appendChild(h2)
+      header.appendChild(h2);
       header.appendChild(h4);
       h2.textContent = `Period - ${initial} to ${end}`;
 
@@ -113,4 +113,83 @@ function sortingByYear(inventors) {
 
 }
 
-export { filteringInventors, mappingFullNames, sortingByYear };
+function sortingByOldestInventor(inventors) {
+
+  let countInventors = Object.keys(inventors).length;
+  const content = document.querySelector(".order-by-oldest");
+  const table = document.createElement("table");
+  const thead = document.createElement("thead");
+  const trth = document.createElement("tr");
+  const thID = document.createElement("th");
+  const thFullName = document.createElement("th");
+  const thYear = document.createElement("th");
+  const thPassed = document.createElement("th");
+  const thAge = document.createElement("th")
+
+  content.appendChild(table);
+  table.appendChild(thead).appendChild(trth);
+  trth.appendChild(thID).textContent = "ID";
+  trth.appendChild(thFullName).textContent = "Full Name";
+  trth.appendChild(thYear).textContent = "Year";
+  trth.appendChild(thPassed).textContent = "Passed";
+  trth.appendChild(thAge).textContent = "Age";
+  
+  for(let i = 0; i < countInventors; i++){
+    
+      const tr = document.createElement("tr");
+      const id = document.createElement("span");
+      const name = document.createElement("td");
+      const year = document.createElement("td");
+      const passed = document.createElement("td");
+      const age = document.createElement("td");
+
+      table.appendChild(tr);
+    
+      let x = i + 1;
+      id.textContent = x;
+      name.textContent = inventors[i].first + " " + inventors[i].last;
+      year.textContent = inventors[i].year;
+      passed.textContent = inventors[i].passed;
+      age.textContent = inventors[i].passed - inventors[i].year;
+
+      tr.appendChild(id);
+      tr.appendChild(name);
+      tr.appendChild(year);
+      tr.appendChild(passed);
+      tr.appendChild(age);
+
+  }
+
+}
+
+function sortingtByAlphabeticallyLastName(people) {
+  const ul = document.querySelector(".list-people-name");
+  people.forEach(person => {
+    const li = document.createElement("li");
+    li.textContent = person;
+    ul.appendChild(li);
+  });
+}
+
+function reducingTransportsWay(originalTransportations, reducedTransportations) {
+  const originalList = document.querySelector(".list-original-transportations");
+  originalTransportations.forEach(list => {
+    const li = document.createElement("li");
+    li.textContent = list;
+    originalList.appendChild(li);
+  })
+
+  const reducedList = document.querySelector(".list-reduced-transportations");
+  for (let index = 0; index < reducedTransportations.length; index++) {
+    const li = document.createElement("li");
+    li.textContent = reducedTransportations[index];
+    reducedList.appendChild(li);
+  }
+}
+
+export { 
+    filteringInventors, mappingFullNames, 
+    sortingByYear, sortingByOldestInventor,
+    sortingtByAlphabeticallyLastName,
+    reducingTransportsWay
+};

@@ -26,7 +26,7 @@ const people = ['Beck, Glenn', 'Becker, Carl',
     'Birrell, Augustine', 'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'
 ];
 
-const vehicle = ['car', 'car', 'truck', 'truck', 
+const transportations = ['car', 'car', 'truck', 'truck', 
 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
-export { inventors, people, vehicle }
+export { inventors, people, transportations }
