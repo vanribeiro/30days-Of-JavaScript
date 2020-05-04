@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<body>
+    <article>
+        <header class="container">
+            <h2><strong>flex-grow</strong> property</h2>
+            <p>Hover your mouse here:</p>
+        </header>  
+        <main class="container">  
+            <div class="panels-flex-grow">
+                <div class="panel-1">panel 1</div>
+                <div class="panel-2">panel 2</div>
+                <div class="panel-3">panel 3</div>
+            </div>
+        </main>
+    </article>
+    <article>
+        <header class="container">
+            <h2><strong>flex-shrink</strong> property</h2>
+            <p>Hover your mouse on panel 5:</p>
+        </header>  
+        <main class="container">  
+            <div class="panels-flex-shrink">
+                <div class="panel-4">panel 4</div>
+                <div class="panel-5">panel 5</div>
+                <div class="panel-6">panel 6</div>
+            </div>
+        </main>
+    </article>
+    <article>
+        <header class="container">
+            <h2><strong>flex-basis</strong> property</h2>
+            <p>Hover your mouse on panel 8:</p>
+        </header>  
+        <main class="container">  
+            <div class="panels-flex-basis">
+                <div class="panel-7">panel 7</div>
+                <div class="panel-8">panel 8</div>
+                <div class="panel-9">panel 9</div>
+            </div>
+        </main>
+    </article>
+    <footer>
+        <div class="container">
+            <p>coded by <a href="https://vanribeiro.github.io">Van Ribero</a></p>
+        </div>
+    </footer>
+    <style>
+        body{
+            font-size: 1.2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #444444;
+        }
+
+        strong, a{
+            color: #b56a7a;
+            font-weight: bold;
+        }
+
+        .container{  
+            width: 80%;
+            margin: auto;
+        }
+
+        footer{
+            text-align: center;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        footer .container{
+            border-top: 1px solid #444444;
+        }
+
+        .panels-flex-grow, 
+        .panels-flex-shrink,
+        .panels-flex-basis{
+            width: 100%;
+            display: flex;
+            letter-spacing: 3px;
+        }
+
+        .panels-flex-grow > *, 
+        .panels-flex-shrink > *,
+        .panels-flex-basis > *{
+            color: #ebebeb;
+            font-size: 1.5em;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 30px;
+            transition: ease-in 0.5s all;
+            cursor: pointer;
+        }
+
+        .panels-flex-shrink > *,
+        .panels-flex-basis > *{
+            width: 30%;
+            padding: 30px 50px;
+        }
+
+        .panel-1,
+        .panel-4,
+        .panel-7{
+            background-color: #444444;
+        }
+
+        .panel-2,
+        .panel-5,
+        .panel-8{
+            background-color: #b56a7a;
+            
+        }
+        .panel-3,
+        .panel-6,
+        .panel-9{
+            background-color: #444444;            transition-duration: 0.5s;
+        }
+
+        /* flex-grow */
+        .panel-1:hover{flex-grow: 1;}
+        .panel-2:hover{flex-grow: 2;}
+        .panel-3:hover{flex-grow: 3;}
+
+        /* flex-shirink */
+        .panel-4:hover{flex-shrink: 3;}
+        .panel-5:hover{flex-shrink: 40;}
+        .panel-6:hover{flex-shrink: 3;}
+
+        /* flex-basis */
+        .panel-7:hover{flex-basis: 15%;}
+        .panel-8:hover{flex-basis: 70%;}
+        .panel-9:hover{flex-basis: 15%;}
+    </style>
+</body>
+</html>

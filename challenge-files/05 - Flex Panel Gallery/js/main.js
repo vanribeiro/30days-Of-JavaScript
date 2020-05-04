@@ -16,6 +16,6 @@ panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 const screenWidth = window.screen.width;
 
 if(screenWidth < 768){
-    const message = "💡 ➡ To have a better experience on this page,\nposition your device horizontally. 😉";
+    const message = "💡 ➡ To have a better experience on this page, position your device horizontally. 😉";
     alert(message);
 }
