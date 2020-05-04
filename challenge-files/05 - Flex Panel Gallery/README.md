@@ -4,6 +4,8 @@
 
 I loved this Painel! 😍 It's beautiful! 💪
 
+![Flex Panel Images Gallery](../../images/challenges/05-flex-panel-image-gallery.jpg)
+
 ## About CSS
 
 I researched, learned and understood nice things about `flex` property doing this exercise! If you wanna know more and see [some code example](my-studies/flex-examples.html) about this [you can read my studies and notes about it](my-studies/flex-shortand.md).
@@ -35,7 +37,7 @@ You can see final result [here](https://vanribeiro-30daysofjavascript.netlify.ap
 
 That's all folks! 😃
 
-Thanks WesBos to share this with us! 💖
+Thanks [WesBos](https://github.com/wesbos) to share this with us! 😊💖
 
 ---
 

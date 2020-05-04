@@ -4,6 +4,8 @@
 
 I loved it! 😍
 
+![CSS Variables](../../images/challenges/03-update-css-varibles-with-js.png)
+
 ## About HTML
 
 I learned about how to use 02 new tags:
@@ -47,4 +49,8 @@ You can see and to interact with the final result [here](https://vanribeiro-30da
 
 That's all folks! 😃
 
-Thanks WesBos to share this with us! 💖
+Thanks [WesBos](https://github.com/wesbos) to share this with us! 😊💖
+
+---
+
+written by [@vanribeiro](https://github.com/vanribeiro).

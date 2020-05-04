@@ -4,6 +4,8 @@
 
 I loved it! 😍 I learned many things about array methods in JS! 💪
 
+![](../../images/challenges/04-array-cardio.png)
+
 ## About HTML and CSS
 
 On this day, we didn't have HTML and CSS. But just because I wanted to see the output on my browser viewport, I coded an HTML and I learned about how to create dynamic tables using JavaScript. But this is a subject to another day.
@@ -133,4 +135,8 @@ You can see final result [here](https://vanribeiro-30daysofjavascript.netlify.ap
 
 That's all folks! 😃
 
-Thanks WesBos to share this with us! 💖
+Thanks [WesBos](https://github.com/wesbos) to share this with us! 😊💖
+
+---
+
+written by [@vanribeiro](https://github.com/vanribeiro).

@@ -4,6 +4,8 @@
 
 I'm really happy with this first day! I learned new things and because of it I'm so excited.
 
+![JavaScript Drum Kit](../../images/challenges/01-javascript-drum-kit.png)
+
 ## About HTML:
 
 Today I learned the HTML tag: `<kbd>`.
@@ -92,3 +94,7 @@ Thanks WesBos to share this with us! 💖
 ## About my adjustments on it
 
 I'm trying to transform it in a clickable application to be used on the cell phone. 😁
+
+---
+
+written by [@vanribeiro](https://github.com/vanribeiro).

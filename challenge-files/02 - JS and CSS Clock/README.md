@@ -4,6 +4,8 @@
 
 I loved this clock! 😍
 
+![CSS Clock](../../images/challenges/02-js-and-css-clock.png)
+
 ## About CSS
 
 I learned two new things here:
@@ -75,4 +77,8 @@ hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 
 That's all folks! 😃
 
-Thanks WesBos to share this with us! 💖
+Thanks [WesBos](https://github.com/wesbos) to share this with us! 😊💖
+
+---
+
+written by [@vanribeiro](https://github.com/vanribeiro).
