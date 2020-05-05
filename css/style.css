@@ -66,9 +66,6 @@
 .main-content .container {
   padding: 15px;
 }
-.main-content .container .row .col-4 {
-  background-color: #F28379;
-}
 .main-content .container .row .card {
   height: 90%;
   margin: 10px;
