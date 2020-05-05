@@ -2,7 +2,7 @@
 
 **Date:** 05/04/2020
 
-![Type Ahead](../../images/challenges/06-type-ahead.png);
+![Type Ahead](../../images/challenges/06-type-ahead.png)
 
 ## About HTML and CSS
 

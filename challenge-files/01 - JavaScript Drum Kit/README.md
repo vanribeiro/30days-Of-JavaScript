@@ -1,4 +1,4 @@
-# Day 01 - JavaScript Drum Kit - WesBos Challenge ✅
+# Day 01 - JavaScript Drum Kit ✅
 
 **Date:** 04/27/2020
 

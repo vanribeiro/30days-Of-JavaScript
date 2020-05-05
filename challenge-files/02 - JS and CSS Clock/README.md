@@ -1,4 +1,4 @@
-# Day 02 - JS and CSS Clock - WesBos Challenge ✅
+# Day 02 - JS and CSS Clock ✅
 
 **Date:** 04/28/2020
 
@@ -34,13 +34,14 @@ I'm not not a mathmatician then I'm not sure to write about it, but basically we
 ```css
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 ```
-
+```
 - x1 = 0.1
 - y1 = 2.7 
 - x2 = 0.58 
 - y2 = 1
+```
 
-The x1 and x2 determine where the curve start and where it finishes. And must be have the [0, 1] range.
+The `x1` and `x2` determine where the curve start and where it finishes. And must be have the [0, 1] range.
 
 On my poor math understanding, the y1 and y2 are control this curve. According the [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function), if we set y1 and y2 with more than [0, 1] range value may generate _bouncing effects_:
 

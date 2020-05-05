@@ -1,4 +1,4 @@
-# Day 03 - Playing with CSS Variables and JS - WesBos Challenge ✅
+# Day 03 - Playing with CSS Variables and JS ✅
 
 **Date:** 04/29/2020
 
