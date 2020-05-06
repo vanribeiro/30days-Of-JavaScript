@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+:root{
+    --font-color: #dbdbdb;
+    --background-color: #242424;
+    --h1-font-family: 'Bebas Neue', sans-serif;
+    --h2-font-family: 'Bebas Neue', sans-serif;
+    --h3-font-family: 'Montserrat', sans-serif;
+    --general-text-font-family: 'Montserrat', sans-serif;
+    --header-page-bg-color: #ebebeb;
+    --header-page-color: #242424;
+    --thead-bg-color: #dbdbdb;
+    --thead-color: #242424;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html{
+    color: var(--font-color);
+    background-color: var(--background-color);
+    font-family: var(--general-text-font-family);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 10%;
+}
+
+article header{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.header-page{
+    background-color: var(--header-page-bg-color);
+    color: var(--header-page-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1{
+    font-family: var(--h1-font-family);
+    font-size: 3em;
+}
+
+h2 {
+    font-family: var(--h2-font-family);
+    letter-spacing: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+footer .container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-top: 1px solid var(--font-color);
+}
+
+table{
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 100%;
+}
+
+thead{
+    height: 30px;
+    background-color: var(--thead-bg-color);
+    color: var(--thead-color);
+    text-align: left;
+}
+
+tbody tr{
+    height: 50px;
+    border-bottom: 1px solid var(--font-color);
+}

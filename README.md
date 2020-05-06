@@ -13,4 +13,5 @@ N | Day        | Description            |
 03|04/29/2020 |[03 - CSS Variables](challenge-files/03%20-%20CSS%20Variables/README.md) ✅
 04|04/30 - 05/02/2020 |[04 - Array Cardio Day 01](challenge-files/04%20-%20Array%20Cardio%20Day%201/README.md) ✅
 05|05/03/2020 |[05 - Flex Panel Image Gallery](challenge-files/05%20-%20Flex%20Panel%20Gallery/README.md) ✅
-06|05/05/2020 |[06 - Type Ahead](challenge-files/06%20-%20Type%20Ahead/README.md) ✅
+06|05/04/2020 |[06 - Type Ahead](challenge-files/06%20-%20Type%20Ahead/README.md) ✅
+07|05/05/2020 |[07 - Array Cardio Day 02](challenge-files/04%20-%20Array%20Cardio%20Day%201/README.md) ✅
