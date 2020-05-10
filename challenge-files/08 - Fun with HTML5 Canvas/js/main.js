@@ -7,7 +7,7 @@ const canvas = document.querySelector('#draw');
   context.lineCap = 'round';
 
   /*https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation*/
-  context.globalCompositeOperation = 'difference';
+  // context.globalCompositeOperation = 'difference';
 
   let isDrawing = false;
   let lastX = 0;
@@ -17,7 +17,7 @@ const canvas = document.querySelector('#draw');
 
   function draw(e) {
     if(!isDrawing) return;
-    context.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+    context.strokeStyle = `hsl(${hue}, 100%, 40%)`;
     
     context.beginPath();
     context.moveTo(lastX, lastY);
