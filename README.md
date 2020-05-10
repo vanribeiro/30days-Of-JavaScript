@@ -15,3 +15,4 @@ N | Day        | Description            |
 05|05/03/2020 |[05 - Flex Panel Image Gallery](challenge-files/05%20-%20Flex%20Panel%20Gallery/README.md) ✅
 06|05/04/2020 |[06 - Type Ahead](challenge-files/06%20-%20Type%20Ahead/README.md) ✅
 07|05/05/2020 |[07 - Array Cardio Day 02](challenge-files/04%20-%20Array%20Cardio%20Day%201/README.md) ✅
+08|05/09/2020 |[08 - 08 - Fun with HTML5 Canvas]challenge-files/08 - Fun with HTML5 Canvas/README.md) ✅
