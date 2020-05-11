@@ -77,11 +77,15 @@ We can apply some effects on the context. On this `README.md` corver I applied t
 context.globalCompositeOperation = 'difference';
 ```
 
+## About my adjustments on it
+
+Using an [MDN tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events/Using_Pointer_Events), I could adapted this challenge to touch screen, which means now we can draw on mobile devices! 😍 
+
 ## Conclusion
 
 I had a lot of fun with this exercise! 😊💖
 
-You can see final result [here](https://vanribeiro-30daysofjavascript.netlify.app/challenge-files/08%20-%20fun%with%20html5%20canvas/). 😃😉😍
+You can see final result [here](https://vanribeiro-30daysofjavascript.netlify.app/challenge-files/08%20-%20fun%20with%20html5%20canvas/)). 😃😉😍
 
 That's all folks! 😃
 
