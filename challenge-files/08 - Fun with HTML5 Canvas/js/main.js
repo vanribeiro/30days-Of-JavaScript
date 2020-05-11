@@ -25,3 +25,10 @@ canvas.addEventListener('touchstart', startTouch);
 canvas.addEventListener('touchend', endTouch);
 canvas.addEventListener('touchleave', leaveTouch);
 canvas.addEventListener('touchmove', drawingTouch);
+
+let screenWidth = window.screen.width;
+const drawContainer = document.querySelector('#draw-container');
+
+if(screenWidth > 768){
+    drawContainer.classList.remove('container');
+}
