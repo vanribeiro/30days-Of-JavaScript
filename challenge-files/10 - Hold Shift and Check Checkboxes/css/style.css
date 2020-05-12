@@ -1,0 +1,88 @@
+
+html {
+    font-family: sans-serif;
+    background: #eca769;
+    color: #1a1a1a;
+}
+
+header{
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+header .container{
+    flex-direction: column;
+}
+
+.checklist-header{
+    max-width: 350px;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checklist-header .status{
+    background-color: #1a1a1a;
+    color: #595959;
+    padding: 5px;
+    line-height: 1px;
+}
+
+.checkbox-selected{
+    color: #a1dca8;
+}
+
+.checklist-header button{
+    border: none;
+    font-size: 1.1em;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px #1a1a1a;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+.inbox {
+    max-width: 350px;
+    margin: 50px auto;
+    margin-top: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+input:checked + label {
+    background: #F9F9F9;
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    margin: 20px;
+}
+
+label {
+    margin: 0;
+    padding: 20px;
+    transition: background 0.2s;
+    flex: 1;
+    font-family:'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+    border-left: 1px solid #D1E2FF;
+}

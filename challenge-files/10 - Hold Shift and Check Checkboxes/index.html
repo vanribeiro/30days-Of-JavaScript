@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hold Shift to Check Multiple Checkboxes</title>
+</head>
+<body>
+   <!--
+   The following is a common layout you would see in an email client.
+   When a user clicks a checkbox, holds Shift, and then clicks another checkbox a few rows down, 
+   all the checkboxes inbetween those two checkboxes should be checked.
+  -->
+  <header>
+    <div class="container">
+      <h1>Checkbox List!</h1>
+      <span>Hold shift key to check multiple checkboxes!</span>
+    </div>
+  </header>
+  <div class="checklist-header container">
+    <div class="status">
+      <p id="counter"><span id="counter-number">00</span> checked</p></span> 
+    </div>
+    <div class="button">
+      <button type="reset" id="reset-checkboxes">Uncheck</button>
+    </div>
+  </div>
+  <div class="inbox">
+    <div class="item">
+      <input type="checkbox" id="item-0">
+      <label for="item-0">This is an inbox layout.</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item-1">
+      <label for="item-1">Check one item</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item-2">
+      <label for="item-2">Hold down your Shift key</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item-3">
+      <label for="item-3">Check a lower item</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item-4">
+      <label for="item-4">Everything in between should also be set to checked</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item-5">
+      <label for="item-5">Try to do it without any libraries</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item-6">
+      <label for="item-6">Just regular JavaScript</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item-7">
+      <label for="item-7">Good Luck!</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="item-8">
+      <label for="item-8">Don't forget to tweet your result!</label>
+    </div>
+  </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
