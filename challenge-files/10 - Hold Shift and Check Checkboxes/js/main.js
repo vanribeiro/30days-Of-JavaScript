@@ -30,10 +30,7 @@ function handleCheck(e) {
 
     if(count > 0){
         counterStatus.classList.add('checkbox-selected');
-    } else{
-        counterStatus.classList.remove('checkbox-selected');
-    }
-    
+    } 
     lastChecked = this;
 }
 
@@ -43,7 +40,7 @@ function handleClearCheckboxes() {
             checkbox.checked = false;
             counterNumber.textContent = `00`;
             count = 0;
-            counterNumber.classList.remove('checkbox-selected');
+            counterStatus.classList.remove('checkbox-selected');
         }
         
     })

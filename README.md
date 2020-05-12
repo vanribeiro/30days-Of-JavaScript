@@ -17,4 +17,4 @@ Nº | Day        | Description            |
 07|05/05/2020 |[Array Cardio Day 02](challenge-files/04%20-%20Array%20Cardio%20Day%201/README.md) ✅
 08|05/09/2020 |[Fun with HTML5 Canvas](challenge-files/08%20-%20Fun%20with%20HTML5%20Canvas/README.md) ✅
 09|05/11/2020 |[Dev Tools Domination](challenge-files/09%20-%20Dev%20Tools%20Domination/README.md) ✅
-10|05/12/2020 |[Hold Shift and Check Checkboxes](challenge-files/Hold%20Shift%20and%20Check%20Checkboxes/README.md) ✅
+10|05/12/2020 |[Hold Shift and Check Checkboxes](challenge-files/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/README.md) ✅
