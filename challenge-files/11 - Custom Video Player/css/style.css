@@ -25,6 +25,7 @@ body {
   position: relative;
   font-size: 0;
   overflow: hidden;
+  
 }
 
 /* This css is only applied when fullscreen is active. */
@@ -66,6 +67,7 @@ body {
 .player__controls {
   display: flex;
   position: absolute;
+  justify-content: center;
   bottom: 0;
   width: 100%;
   transform: translateY(100%) translateY(-5px);
@@ -101,7 +103,7 @@ body {
   width: 50%;
   background: #ffc600;
   flex: 0;
-  flex-basis: 50%;
+  flex-basis: 0%;
 }
 
 /* unholy css to style input type="range" */
@@ -159,4 +161,27 @@ input[type=range]::-moz-range-thumb {
   border-radius: 50px;
   background: #ffc600;
   cursor: pointer;
+}
+
+.fullscreen-icon{
+  width: 24px;
+  height: 24px;
+}
+
+.timer{
+  display: flex;
+  justify-content: space-between;
+  height: 15px;
+	margin: 5px;
+	padding-left: 5px;
+  padding-right: 5px;
+  
+}
+
+.timer button{
+  font-size: 1em;
+	color: #fff;
+  display: flex;
+  background-color: transparent;
+  border: none;
 }

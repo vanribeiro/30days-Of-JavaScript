@@ -29,9 +29,7 @@ He created a function to handle the checks. This function do something like this
 
 ## About my modifications
 
-I created a button called `UNCHECK`, which clear the list and an accounter to count the checkboxes selected.
-
-Now I'm trying to adapt this code to mobile. 😊
+I created a button called `UNCHECK`, which clear the list and an accounter to count the checkboxes selected. 😊
 
 
 ## Conclusion
