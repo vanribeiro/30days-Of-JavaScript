@@ -18,13 +18,9 @@ I'll try it on the next days! 😊
 
 I added some features here:
 
-- I Created a fullscreen button.
-- I added some keyboard shortcuts.
-
-What am I going to do next on this player?
-
-- To Create a timer on the player!
-- To Add some touch screen adaptation.
+- Fullscreen button.
+- Some keyboard shortcuts.
+- Show/hide the video controls and mouse while the video is playing.
 
 ## Conclusion
 
