@@ -2,6 +2,7 @@ const input = document.querySelector('#secret-word');
 const rightAnswerSound = document.querySelector('#right-answer-sound');
 const secretWord = document.querySelector('.strong');
 const errorMessage = document.querySelector('.error-answer');
+const refreshPage = document.querySelector('.refresh-page');
 input.value;
 
 let secretWords = ['banana', 'javascript', 'cupcake', 'blue', 'love'];
@@ -11,6 +12,11 @@ function getRandowWords(secretWords){
   let min = 0, max = secretWords.length;
   return Math.floor(Math.random() * (max - min) + min);
 }
+
+refreshPage.addEventListener('click', () =>{
+  location.reload();
+  input.value = '';
+});
 
 const pressed = [];
 const secretCode = randomWord;
@@ -30,4 +36,4 @@ input.addEventListener('keyup', (e) =>{
     }
   } 
 
-})
+});

@@ -50,9 +50,17 @@ footer{
 
 .input-group{
     width: 100%;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+button{
+    padding: 10px;
+    background-color: #443135;
+    color: #fffafb;
+    border-color: transparent;
 }
 
 input[type="text"]{
