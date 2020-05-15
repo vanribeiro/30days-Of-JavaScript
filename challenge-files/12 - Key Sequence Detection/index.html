@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Key Sequence Detection</title>
+</head>
+<body>
+  <main class="container">
+    <section>
+      <header>
+        <h1>Key Sequence Detection</h1>
+      </header>
+      <main>
+        <div class="input-group">
+          <label for="secret-code">Your secret word is: <strong class="strong"></strong></label>
+          <input type="text" name="secret-code" id="secret-word" placeholder="Type the secret word here...">
+          <span class="error-answer"></span>
+        </div>
+      </main>
+      <audio id="right-answer-sound" src="media/you-win-sound-effect-5.mp3"></audio>
+    </section>
+  </main>
+  <footer>
+    <p>coded by <a href="https://vanribeiro.github.io">Van Ribeiro</a></p>
+  </footer>
+<script src="js/main.js"></script>
+</body>
+</html>
