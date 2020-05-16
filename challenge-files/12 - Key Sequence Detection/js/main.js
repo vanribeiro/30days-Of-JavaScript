@@ -22,6 +22,7 @@ const pressed = [];
 const secretCode = randomWord;
 secretWord.innerHTML = `${randomWord}`;
 input.addEventListener('keyup', (e) =>{
+  e.preventDefault();
   if(e.keyCode > 64 && e.keyCode < 91){
     pressed.push(e.key);
     pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
