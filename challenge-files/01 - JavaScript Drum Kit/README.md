@@ -95,6 +95,8 @@ Thanks WesBos to share this with us! 💖
 
 I'm trying to transform it in a clickable application to be used on the cell phone. 😁
 
+**05/08/2020:** Now is clickable!
+
 ---
 
 written by [@vanribeiro](https://github.com/vanribeiro).

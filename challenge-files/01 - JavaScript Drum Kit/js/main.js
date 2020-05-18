@@ -25,8 +25,11 @@ function playSound(e) {
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
 
-  const audios = document.querySelectorAll('audio');
-  keys.forEach(key => key.addEventListener('click', () =>{
-      console.log("Clicked");
-    }
-  ))
+  keys.forEach(key => key.addEventListener('click', () => {
+    const audio = document.querySelector(`audio[data-key="${key.dataset.key}"]`);
+    audio.play();
+    audio.currentTime = 0;
+    key.classList.add('playing');
+  }));
+
+  
