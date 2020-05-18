@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1a1a1a;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    border-bottom: 2px solid #707070;
+}
+
+h2{
+    border-bottom: 1px dashed #707070;
+}
+
+h3{
+    font-weight: unset;
+}
+
+.container{
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    background-color: #ebebeb;
+}
+
+header{
+    margin-top: 30px;
+}
+
+pre{
+    background-color: #1a1a1a;
+    width: fit-content;
+    overflow-x: scroll;
+    margin-top: 10px;
+    color: #ebebeb;
+}
+
+pre code{
+    white-space: pre;
+}
+
+code{
+    color: #ebebeb;
+}
+
+.strings-booleans-numbers, .arrays, .objects{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section{
+    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+}
+
+.output{
+    color: gray
+}
+
+.key-word{
+    color: #2a6eec;
+}
+
+.vars{
+    color: #6b8fd1;
+}
+
+.func{
+    color: #eca769;
+}
+
+.number{
+    color: #94be75;
+}
+
+.strings{
+    color: #dd804a;
+}
+
+.obj{
+    color: #ffd0ff;
+}

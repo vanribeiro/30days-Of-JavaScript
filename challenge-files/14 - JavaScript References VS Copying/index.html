@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>JS References VS Copying</title>
+</head>
+<body>
+  <main class="container">
+    <article>
+      <header>
+        <h1>JS References VS Copying</h1>
+      </header>
+      <main>
+    <div class="strings-booleans-numbers">
+    <div class="all-sections">
+    <section>
+    <h3> References - Strings, numbers and booleans: </h3>
+    <pre>
+    <code>
+    <span class="output"> //Numbers</span>
+    <span class="key-word">let</span><span class="vars"> age</span> = <span class="number">100</span>;
+    <span class="key-word">let</span><span class="vars"> age2</span> = <span class="vars">age</span>;
+    <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">age</span>, <span class="vars">age2</span>);
+    <span class="output">// 100 100</span></code>
+    <span class="vars">age</span> = <span class="number">200</span>
+    <span class="output">// 200 100</span>
+    
+    <span class="output">// Strings</span>
+    <span class="key-word">let</span><span class="vars"> name</span> = <span class="strings">'Wes'</span>;
+    <span class="key-word">let</span><span class="vars"> name2</span> = <span class="vars">name</span>;
+    <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">name</span>, <span class="vars">name2</span>);
+    <span class="output">// Wes Wes</span></code>
+    <span class="vars">name</span> = <span class="strings">'Wesley'</span>;
+    <span class="output">// Wes Wesley</span></code>
+    </pre>
+    </section>
+    </div>
+    </div>
+    <div class="arrays">
+      <h2>Arrays</h2>
+      <section>
+      <pre><code>
+    <span class="output">// Consider this Array: </span>
+    <span class="key-word">const</span><span class="vars"> players</span> = [<span class="strings">'Wes'</span>,<span class="strings">'Sarah'</span>,<span class="strings">'Ryan'</span>,<span class="strings">'Poppy'</span>];
+    </code></pre>
+    </section>
+      <div class="all-sections">
+    <section>
+    <h3> Creating an Array Reference: </h3>
+
+    <pre><code>
+    <span class="key-word">const</span><span class="vars"> team</span> = <span class="vars">players</span>;
+    <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">players</span>, <span class="vars">team</span>);
+    <span class="output">// ["Wes","Sarah","Ryan","Poppy"]</span>
+    <span class="output">// ["Wes","Sarah","Ryan","Poppy"]</span>
+
+    <span class="output">// What if I update the team position array?</span>
+    <span class="vars">team[3]</span> = <span class="strings">'Lux'</span>
+    <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">team</span>);
+    <span class="output">// ["Wes","Sarah","Ryan","Poppy"]</span>
+
+    <span class="output">// The original array:</span>
+    <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">players</span>);
+    <span class="output">// ["Wes","Sarah","Ryan","Poppy"]</span></code></pre>
+    </section>
+    <section>
+    <h3> Copying an Array: </h3>
+    <pre><code>
+    <span class="output">// Copying with slice() </span>
+    <span class="key-word">const</span> <span class="vars">team2</span> = <span class="vars">players</span>.<span class="func">slice()</span>;
+    <span class="vars">team2[3]</span> = <span class="strings">'Lux'</span>;
+    <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">team2</span>);
+    <span class="output">// ["Wes","Sarah","Ryan","Lux"]</span>
+
+    <span class="output">// Copying with concat()</span>
+    <span class="key-word">const</span> <span class="vars">team3</span> = [].<span class="func">concat</span><span class="vars">(players)</span>;
+    <span class="output">// ["Wes","Sarah","Ryan","Poppy"]</span>
+
+    <span class="output">// Copying with ES6 Spread Operator '...'</span>
+    <span class="key-word">const</span> <span class="vars">team4</span> = [...<span class="vars">players</span>];
+    <span class="vars">team4[3]</span> = <span class="strings">'heeeeeeee hawwwwwww'</span>;
+    <span class="output">// ["Wes","Sarah","Ryan","heeeeeeee hawwwwwww"]</span> 
+    
+    <span class="output">// Copying with Array.from() <span>
+    <span class="key-word">const</span> <span class="vars">team5</span> = <span class="vars">Array</span>.<spam class="span func">from</spam>(<span class="vars">players</span>);
+    <span class="vars">team4[5]</span> = <span class="strings">'cool'</span>;
+    <span class="output">// ["Wes","Sarah","Ryan","cool"]</span></code></pre>
+        </section>
+      </div>
+    </div>
+    <div class="objects">
+      <h2>Objects</h2>
+      <section>
+        <pre>
+          <code>
+          <span class="output">// Considere this object</span>
+          <span class="key-word">const</span><span class="vars"> person</span> = {
+              <span class="obj">name</span>: <span class="strings">'Wes Bos'</span>,
+              <span class="obj">age</spas>: <span class="number">80</span>
+          }</pre></code>
+      </section>
+      <div class="all-sections">
+    <section>
+    <h3> Creating a Reference: </h3>
+    <pre><code>
+    <span class="key-word">const</span><span class="vars"> captain</span> = <span class="vars">person</span>;
+    <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">captain</span>);
+    <span class="output">// {"name": "Wes Bos", "age": 80, "number": 99}</span></code></pre>
+    </section>
+    <section>
+    <h3> Copying an Object: </h3>
+    <pre><code>
+    <span class="output">// Copying with Object.assign() </span>
+    <span class="key-word">const</span> <span class="vars">cap2</span> = <span class="vars">Object</span>.<span class="func">assign</span>({}, <span class="vars">person</span>,
+      {<span class="obj">number</span>: <span class="number">99</span>, <span class="obj">age</span>: <span class="number">12</span>});
+    <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">cap2</span>);
+    <span class="output">// {"name": "Wes Bos", "age": 12, "number": 99}</span></code></pre>
+    </section>
+    <section>
+      <h3> Copying an Object using JSON.stringfy() </h3>
+      <pre><code>
+        <span class="output">// Considere this another object</span>
+        <span class="key-word">const</span><span class="vars"> wes</span> = {
+            <span class="obj">name</span>: <span class="strings">'Wes'</span>,
+            <span class="obj">age</spas>: <span class="number">100</span>,
+            <span class="obj">social</span>: {
+              <span class="obj">name</span>: <span class="strings">'@wesbos'</span>,
+              <spas class="obj">age</spas>: <span class="strings">'wesbos.developer'</span>,   
+          }
+        }</pre></code>
+      <pre><code>
+      <span class="key-word">const</span> <span class="vars">dev</span> = <span class="vars">Object</span>.<span class="func">assign</span>({}, <span class="vars">wes</span>);
+      <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">wes</span>);
+      <span class="output">/* {
+        "name": "wes",
+        "age": "100",
+        "social": {
+          "twitter": "@wesbos",
+          "facebook": "wesbos.developer"
+        }
+      }*/</span>
+  
+      <span class="output">//If we reassign one object property 
+      //in the first level:</span>
+      <span class="vars">dev</span>.<span class="obj">name</span> = <span class="strings">'Wesley'</span>
+      <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">dev</span>);
+      <span class="output">// It's ok! Works! </span>
+      <span class="output">/*{
+        "name": "Wesley",
+        "age": "100",
+        "social": {
+          "twitter": "@wesbos",
+          "facebook": "wesbos.developer"
+        }
+      }
+        */</span>
+  
+      <span class="output">// What if I try to reassign in 1 level deep?</span>
+      <span class="vars">dev</span>.<span class="obj">social.twitter</span> = <span class="strings">'@coolman'</span>;
+      <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">dev</span>.<span class="obj">social</span>);
+      <span class="output">//{"twitter": "@coolman", "facebook": "wesbos.developer"}</span>
+  
+      <span class="output">// Unfortunately this reassign the original object:</span>
+      <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">wes</span>.<span class="obj">social</span>);
+      <span class="output">//{"twitter": "@coolman", "facebook": "wesbos.developer"}</span>
+  
+      <span class="output">// I understand this happens because we copy 
+      // just the first object level and form some 
+      // reason not access the nested objects properties.
+      // Another way suggested by Wes, 
+      // but not recommended by him, 
+      // is to transform this in JSON and parse the strings
+      // to turn this strings in Object again </span>
+  
+      <span class="key-word">const</span> <span class="vars">dev2</span> = <span class="vars">JSON</span>.<span class="func">stringify</span>(<span class="vars">wes</span>);
+      <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">dev2</span>);
+      <span class="output">// We just have the string, because the
+      // JSON.stringify() transforms an object to string</span>
+      <span class="output">//{"name":"wes","age":"100","social":{"twitter":"@coolman","facebook":"wesbos.developer"}}</span>
+  
+      <span class="output">// To transform this string in an object again
+      // it's necessary to parse it:</span>
+      <span class="key-word">const</span> <span class="vars">dev3</span> = <span class="vars">JSON</span>.<span class="func">parse</span>(<span class="vars">JSON</span>.<span class="func">stringify</span>(<span class="vars">wes</span>));
+      <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">dev3</span>);
+      <span class="output">/* Now we have an object
+      {
+        "name": "wes",
+        "age": "100",
+        "social": {
+          "twitter": "@coolman",
+          "facebook": "wesbos.developer"
+        }
+      }*/
+    </span>
+  
+    <span class="vars">dev3</span>.<span class="obj">social.twitter</span> = <span class="strings">'@coolman'</span>;
+    <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">dev3</span>.<span class="obj">social</span>);
+    <span class="output">// {
+      "twitter": "@coolman",
+      "facebook": "wesbos.developer"
+    }</span>
+  
+    //If we look in the original array:
+    <span class="vars">console</span>.<span class="func">log</span>(<span class="vars">wes</span>.<span class="obj">social</span>);
+      <span class="output">/* The original array wasn't changed:
+      {
+        "twitter": "@wesbos",
+        "facebook": "wesbos.developer"
+      }*/</span>
+      </code></pre>
+    </section>
+      </div>
+    </div>
+      </main>
+    </article>
+  </main>
+  <footer>
+    <div class="container">
+      <p>code by <a href="https://vanribeiro.github.io">Van Ribeiro</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
