@@ -20,8 +20,9 @@ Nº | Day        | Description            | Status
 10|05/12/2020 |[Hold Shift and Check Checkboxes](challenge-files/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/README.md) | ✅
 11|05/13/2020 |[Custom Video Player](challenge-files/11%20-%20Custom%20Video%20Player/README.md) | ✅
 12|05/14/2020 |[Key Sequence Detection](challenge-files/12%20-%20Key%20Sequence%20Detection/README.md) | ✅
-12|05/15/2020 |[Slide in on Scroll](challenge-files/13%20-%20Slide%20in%20on%20Scroll/README.md) | ✅
-
+13|05/15/2020 |[Slide in on Scroll](challenge-files/13%20-%20Slide%20in%20on%20Scroll/README.md) | ✅
+14|05/17/2020 |[JavaScript References VS Copying](challenge-files/14%20-%20JavaScript%20References%20VS%20Copying/README.md) | ✅
+15|05/18/2020 |[LocalStorage](challenge-files/15%20-%20LocalStorage/README.md) | ✅
 ___
 
 

@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background: url('http://wes.io/hx9M/oh-la-la.jpg') center no-repeat;
+  background: url('./../img/oh-la-la.jpg') center no-repeat;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -72,8 +72,38 @@ h2 {
   margin-top: 20px;
 }
 
-.add-items input {
+.add-items input, .delete-all-items, .select-all{
   padding: 10px;
   outline: 0;
   border: 1px solid rgba(0,0,0,0.1);
+}
+
+input[type="submit"]{
+  background-color: #235aad;
+  color: #ebebeb;
+  font-weight: bold;
+}
+
+.add-items input{
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.delete-all-items {
+  background-color: #942323;
+  color: #ebebeb;
+}
+
+.buttons-group{
+  margin-top: 15px;
+  display: flex;
+  justify-content: left;
+}
+
+.delete-item{
+  border: none;
+  cursor: pointer;
+  color: #1a1a1a;
+  background-color: #c9c9c9;
+  padding: 3px 6px;
+  font-size: 1em;
 }
