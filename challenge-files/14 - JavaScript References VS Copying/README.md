@@ -10,13 +10,13 @@ I created a simple page to take some code notes using the tags `<pre>` and `<cod
 
 ## About JavaScript
 
-My notes are on the [`index.html`](./index.html) page of this page. If you wanna something more readable version, you do it in [this site](https://vanribeiro-30daysofjavascript.netlify.app/challenge-files/14%20-%20javascript%20reference%20vs%20copying/).
+My notes are on the [`index.html`](./index.html) page of this page. If you wanna something more readable version, you do it in [this site](https://vanribeiro-30daysofjavascript.netlify.app/challenge-files/14%20-%20JavaScript%20References%20VS%20Copying/index.html).
 
 ## Conclusion
 
 I have a lot of things to learn about it. 😊💖
 
-You can see final result [here](https://vanribeiro-30daysofjavascript.netlify.app/challenge-files/14%20-%20javascript%20reference%20vs%20copying/)). 😃😉😍
+You can see final result [here](https://vanribeiro-30daysofjavascript.netlify.app/challenge-files/14%20-%20JavaScript%20References%20VS%20Copying/index.html)). 😃😉😍
 
 That's all folks! 😃
 

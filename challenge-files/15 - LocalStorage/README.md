@@ -16,7 +16,7 @@ Sorry... No notes today. I spent a lot time working on it and trying to discover
 
 I have a lot of things to learn about it and I wanna do some improviments here. 😊💖
 
-You can see final result [here](https://vanribeiro-30daysofjavascript.netlify.app/challenge-files/14%20-%20localstorage)). 😃😉😍
+You can see final result [here](https://vanribeiro-30daysofjavascript.netlify.app/challenge-files/15%20-%20LocalStorage/index.html)). 😃😉😍
 
 That's all folks! 😃
 
