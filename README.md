@@ -23,6 +23,8 @@ Nº | Day        | Description            | Status
 13|05/15/2020 |[Slide in on Scroll](challenge-files/13%20-%20Slide%20in%20on%20Scroll/README.md) | ✅
 14|05/17/2020 |[JavaScript References VS Copying](challenge-files/14%20-%20JavaScript%20References%20VS%20Copying/README.md) | ✅
 15|05/18/2020 |[LocalStorage](challenge-files/15%20-%20LocalStorage/README.md) | ✅
+16|05/19/2020 |[Mouse Move Shadow](challenge-files/16%20-%20Mouse%20Move%20Shadow/README.md) | ✅
+
 ___
 
 
