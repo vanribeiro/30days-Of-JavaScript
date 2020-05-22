@@ -15,7 +15,7 @@ Sorry, I'm not writting more here. I'm little busy on this days.
 
 Like others class I had here, really useful lesson! 😊💖
 
-You can see final result [here]http://127.0.0.1:5500/challenge-files/17%20-%20Sort%20Without%20Articles/index.html)). 😃😉😍
+You can see final result [here](http://127.0.0.1:5500/challenge-files/17%20-%20Sort%20Without%20Articles/index.html)). 😃😉😍
 
 That's all folks! 😃
 
