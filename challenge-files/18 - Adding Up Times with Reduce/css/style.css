@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'DS Digital';
+    src: url('./font/ds_digital/DS-DIGIB.TTF');
+}
+
+body{
+    background-color: #ebebeb;
+    color: #2e2e2e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main, header{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+header{
+    margin-top: 25px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+header h1{
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+}
+
+.total-time-video{
+    font-family: 'DS Digital';
+    font-size: 3em;
+    border: #2e2e2e 1px solid;
+    padding: 15px;
+    color: #77b35b;
+    background-color: #2e2e2e;
+}
+
+.list{
+    margin-top: 50px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+li{
+    width: 130px;
+    height: 130px;
+    background-color: #eca769;
+    display: flex;
+    margin: 1px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(93, 48, 42);
+}
+
+
+@media only screen and (max-width: 768px){
+
+    header{
+        flex-direction: column;
+    }
+}

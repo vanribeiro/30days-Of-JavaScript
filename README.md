@@ -25,7 +25,7 @@ Nº | Day        | Description            | Status
 15|05/18/2020 |[LocalStorage](challenge-files/15%20-%20LocalStorage/README.md) | ✅
 16|05/19/2020 |[Mouse Move Shadow](challenge-files/16%20-%20Mouse%20Move%20Shadow/README.md) | ✅
 17|05/21/2020 |[Sort Without Articles](challenge-files/17%20-%20Sort%20Without%20Articles/README.md) | ✅
-
+18|05/22/2020 |[Adding Up Times with Reduce](challenge-files/18%20-%20Adding%20Up%20Times%20with%20Reduce/README.md) | ✅
 ___
 
 
