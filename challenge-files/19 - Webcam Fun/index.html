@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get User Media Code Along!</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="photobooth">
+    <div class="video-preview-container">
+      <button class="take-photo-button mobile" onClick="takePhoto()"><ion-icon name="camera-outline"></ion-icon></button>
+      <video class="player"></video>
+    </div>
+    <div class="controls">
+      <button class="take-photo-button desktop-button" onClick="takePhoto()"><ion-icon name="camera-outline"></ion-icon></button>
+      <!-- <div class="rgb">
+        <div class="red-color">
+          <div class="red-min">
+            <label for="rmin">Red Min:</label>
+            <input type="range" min=0 max=255 name="rmin">
+          </div>
+          <div class="red-max">
+            <label for="rmax">Red Max:</label>
+            <input type="range" min=0 max=255 name="rmax">
+          </div>
+        </div>
+
+        <div class="green-color">
+          <div class="green-min">
+              <label for="gmin">Green Min:</label>
+              <input type="range" min=0 max=255 name="gmin">
+          </div>
+          <div class="green-max">
+             <label for="gmax">Green Max:</label>
+              <input type="range" min=0 max=255 name="gmax">
+          </div>
+        </div>
+
+        <div class="blue-color">
+          <div class="blue-min">
+            <label for="bmin">Blue Min:</label>
+            <input type="range" min=0 max=255 name="bmin">
+          </div>
+          <div class="blue-max">
+            <label for="bmax">Blue Max:</label>
+            <input type="range" min=0 max=255 name="bmax">
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="others-filters">
+        <button class="red-filter" onclick="callRedEffect()">Red Effect</button>
+        <button class="rgb-split">RGB Split</button>
+      </div> -->
+    </div>
+
+    <div class="photo-container">
+      <canvas class="photo"></canvas>
+      <div class="strip"></div>
+
+    </div>
+
+
+  </div>
+
+  <audio class="snap" src="assets/sound/Photo or picture snap - Sound effect.mp3" hidden></audio>
+
+  <script src="js/scripts.js"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+</body>
+</html>

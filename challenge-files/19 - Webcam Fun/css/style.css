@@ -1,0 +1,164 @@
+html {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  background: #eca769;
+}
+
+.photobooth {
+  background: white;
+  max-width: 150rem;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
+.take-photo-button{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  background-color: #800080;
+}
+
+ion-icon{
+  font-size: 3em;
+  color: #ebebeb;
+}
+
+/*clearfix*/
+.photobooth:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.photo-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.video-preview-container{
+  display: flex;
+  margin: 15px;
+}
+
+.player {
+  width:150px;
+}
+
+.red-color, .green-color, .blue-color{
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.red-min, .red-max, 
+.green-min, .green-max,
+.blue-min, .blue-max{
+  display: flex;
+  align-items: center;
+}
+
+/*
+  Strip!
+*/
+
+.strip {
+  padding: 2rem;
+}
+
+.strip img {
+  width: 100px;
+  overflow-y: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  background: white;
+}
+
+.strip a:nth-child(5n+1) img { transform: rotate(10deg); }
+.strip a:nth-child(5n+2) img { transform: rotate(-2deg); }
+.strip a:nth-child(5n+3) img { transform: rotate(8deg); }
+.strip a:nth-child(5n+4) img { transform: rotate(-11deg); }
+.strip a:nth-child(5n+5) img { transform: rotate(12deg); }
+
+@media only screen and (max-width: 767px){
+
+  .red-min, .red-max, 
+  .green-min, .green-max,
+  .blue-min, .blue-max{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .player{
+    margin: 15px;
+  }
+
+  .video-preview-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .controls{
+    margin: 50px 5px 0px;
+  }
+
+  .photo-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo {
+    width: 50%;
+  }
+
+  .controls .desktop-button{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px){
+
+  .strip{
+    width: 50%;
+  }
+
+  .controls{
+    margin: 15px;
+  }
+
+  .controls .desktop-button{
+    margin-bottom: 15px;
+  }
+
+  .player {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width:100px;
+  }
+
+  .photo {
+    width: 50%;
+    height: 480px;
+  }
+
+  .video-preview-container .mobile{
+    display: none;
+  }
+
+  .photo-container{
+    margin: 50px;
+    padding-bottom: 50px;
+  }
+}
