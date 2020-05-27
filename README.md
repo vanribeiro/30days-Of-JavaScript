@@ -27,6 +27,7 @@ Nº | Day        | Description            | Status
 17|05/21/2020 |[Sort Without Articles](challenge-files/17%20-%20Sort%20Without%20Articles/) | ✅
 18|05/22/2020 |[Adding Up Times with Reduce](challenge-files/18%20-%20Adding%20Up%20Times%20with%20Reduce/) | ✅
 19|05/25/2020 |[Webcam Fun](challenge-files/19%20-%20Webcam%20Fun/) | ✅
+20|05/26/2020 |[Speech Detection](challenge-files/20%20-%20Speech%20Detection/) | ✅
 
 ___
 
