@@ -2,7 +2,12 @@ const arrow = document.querySelector('.arrow');
 const speed = document.querySelector('.speed-value');
 
 navigator.geolocation.watchPosition((data) => {
-    speed.textContent = (data.coords.speed).toFixed(5);
+    /**
+     * data.coords.speed returns meters/seconds
+     * 3.6km/h = 1m/s
+     * 
+     */
+    speed.textContent = (data.coords.speed * 3.6).toFixed(5);
     arrow.style.transform = `rotate(${data.coords.heading}deg)`
 }, (err) => {
     console.err(err);
