@@ -9,17 +9,20 @@ html {
 body {
   min-height: 100vh;
   margin: 0; /* Important! */
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #1a1a1a;
   background:
     linear-gradient(45deg, hsla(340, 100%, 55%, 1) 0%, hsla(340, 100%, 55%, 0) 70%),
     linear-gradient(135deg, hsla(225, 95%, 50%, 1) 10%, hsla(225, 95%, 50%, 0) 80%),
     linear-gradient(225deg, hsla(140, 90%, 50%, 1) 10%, hsla(140, 90%, 50%, 0) 80%),
     linear-gradient(315deg, hsla(35, 95%, 55%, 1) 100%, hsla(35, 95%, 55%, 0) 70%);
+    overflow-x: hidden;
 }
 
 .wrapper {
   margin: 0 auto;
-  max-width: 500px;
+  margin-bottom: 50px;
+  max-width: 80%;
   font-size: 20px;
   line-height: 2;
   position: relative;
@@ -58,4 +61,30 @@ a {
   padding: 5px;
   margin: 0 20px;
   color: black;
+}
+
+.warning{
+  display: none;
+  width: 80%;
+  margin: 15px auto;
+  font-style: italic;
+  font-size: smaller;
+  line-height: 25px;
+  border: 1px solid #444444;
+  background-color: #faebd7;
+  box-shadow: 3px 3px 5px #000000;
+  padding: 15px;
+  color: #be2323;
+}
+
+@media only screen and (max-width: 600px){
+
+  .menu{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu a{
+    display: block;
+  }
 }
