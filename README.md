@@ -28,8 +28,8 @@ Nº | Day        | Description            | Status
 18|05/22/2020 |[Adding Up Times with Reduce](challenge-files/18%20-%20Adding%20Up%20Times%20with%20Reduce/) | ✅
 19|05/25/2020 |[Webcam Fun](challenge-files/19%20-%20Webcam%20Fun/) | ✅
 20|05/26/2020 |[Speech Detection](challenge-files/20%20-%20Speech%20Detection/) | ✅
-21|05/27/2020 |[Geolocation](challenge-files/20%20-%20Geolocation/) | ✅
-22|05/28/2020 |[22 - Follow Along Link Highlighter](challenge-files/20%20-%Follow%20Along%20Link%20Highlighter/) | ✅
+21|05/27/2020 |[Geolocation](challenge-files/21%20-%20Geolocation/) | ✅
+22|05/28/2020 |[Follow Along Link Highlighter](challenge-files/22%20-%20Follow%20Along%20Link%20Highlighter/) | ✅
 ___
 
 

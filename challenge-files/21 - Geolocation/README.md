@@ -2,7 +2,7 @@
 
 **Date:** 05/27/2020
 
-![Speech Detection](./../../images/challenges/21-geolocation.png)
+![Geolocation](./../../images/challenges/21-geolocation.png)
 
 
 ## About JavaScript
