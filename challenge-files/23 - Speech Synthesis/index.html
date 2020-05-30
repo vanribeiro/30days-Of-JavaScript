@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Speech Synthesis</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -12,8 +13,8 @@
 
       <h1>The Voiceinator 5000</h1>
 
-      <select name="voice" id="voices">
-        <option value="">Select A Voice</option>
+      <select name="voice" id="voices" >
+        <option>Select A Voice</option>
       </select>
 
       <label for="rate">Rate:</label>
@@ -28,14 +29,7 @@
 
     </div>
 
-<script>
-  const msg = new SpeechSynthesisUtterance();
-  let voices = [];
-  const voicesDropdown = document.querySelector('[name="voice"]');
-  const options = document.querySelectorAll('[type="range"], [name="text"]');
-  const speakButton = document.querySelector('#speak');
-  const stopButton = document.querySelector('#stop');
-</script>
+<script type="module" src="js/main.js"></script>
 
 </body>
 </html>

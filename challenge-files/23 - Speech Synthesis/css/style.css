@@ -1,6 +1,7 @@
 html {
   font-size: 10px;
   box-sizing: border-box;
+  color: #1a1a1a;
 }
 
 *, *:before, *:after {
@@ -52,6 +53,16 @@ h1 {
 
 .voiceinator input,
 .voiceinator button,
+.voiceinator textarea{
+  font-size: 2rem;
+}
+
+.voiceinator select{
+  font-size: 1.5rem;
+}
+
+.voiceinator input,
+.voiceinator button,
 .voiceinator select,
 .voiceinator textarea {
   width: 100%;
@@ -59,17 +70,12 @@ h1 {
   margin: 10px 0;
   padding: 10px;
   border: 0;
-  font-size: 2rem;
   background: #F7F7F7;
   outline: 0;
 }
 
 textarea {
   height: 20rem;
-}
-
-input[type="select"] {
-
 }
 
 .voiceinator button {
@@ -83,6 +89,10 @@ input[type="select"] {
   border-bottom: 5px solid #F3C010;
   cursor: pointer;
   position: relative;
+}
+
+label{
+  font-size: 1.5rem;
 }
 
 .voiceinator button:active {
