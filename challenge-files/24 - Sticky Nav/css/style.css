@@ -15,6 +15,7 @@ body {
 }
 
 .site-wrap {
+  color: #1a1a1a;
   max-width: 700px;
   margin: 70px auto;
   background: white;
@@ -25,10 +26,14 @@ body {
   transition: transform 0.5s;
 }
 
+.fixed-nav .site-wrap{
+  transform: scale(1);
+}
+
 header {
   text-align: center;
   height: 50vh;
-  background: url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat;
+  background: url(./../image/lost.jpg) bottom center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -50,6 +55,11 @@ nav {
   z-index: 1;
 }
 
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
 nav ul {
   margin: 0;
   padding:0;
@@ -69,9 +79,13 @@ li.logo {
   max-width: 0;
   overflow: hidden;
   background: white;
-  transition: all .5s;
+  transition: all 1s;
   font-weight: 600;
   font-size: 30px;
+}
+
+.fixed-nav li.logo{
+  max-width: 500px;
 }
 
 li.logo a {

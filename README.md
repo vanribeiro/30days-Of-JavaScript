@@ -31,6 +31,7 @@ Nº | Day        | Description            | Status
 21|05/27/2020 |[Geolocation](challenge-files/21%20-%20Geolocation/) | ✅
 22|05/28/2020 |[Follow Along Link Highlighter](challenge-files/22%20-%20Follow%20Along%20Link%20Highlighter/) | ✅
 23|05/29/2020 |[Speech Synthesis](challenge-files/23%20-%20Speech%20Synthesis/) | ✅
+24|05/30/2020 |[Sticky Nav](challenge-files/24%20-%20Sticky%20Nav/) | ✅
 
 ___
 
