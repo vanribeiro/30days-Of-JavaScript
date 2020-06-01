@@ -64,11 +64,11 @@
   padding-bottom: 10%;
 }
 .main-content .container {
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .main-content .container .row .card {
   height: 95%;
-  margin: 15px;
   background-color: #ffffff;
   box-shadow: 1px 1px 5px #000000;
   text-align: center;
@@ -89,6 +89,11 @@
   height: 100%;
   margin-bottom: 20px;
 }
+.main-content .container .row .card .card-content .stickers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .main-content .container .row .card .card-content .card-links {
   display: flex;
   align-items: end;
@@ -106,22 +111,26 @@
     display: flex;
     flex-direction: column;
   }
-  .main-content .card-content {
+  .main-content .card {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .main-content .card .card-content {
     padding: 5px;
     height: 100%;
     margin-bottom: 20px;
   }
-  .main-content .card-content .stickers {
-    display: flex;
-    flex-direction: column;
-  }
-  .main-content .card-content .card-links {
+  .main-content .card .card-content .card-links {
     padding: 1px;
   }
 }
 @media only screen and (min-width: 769px) {
   .main-content .row {
     display: flex;
+  }
+  .main-content .row .card {
+    margin: 15px;
   }
 }
 footer {

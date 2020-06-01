@@ -147,3 +147,29 @@ html {
   .button[href*=twitter] { background: #019FE9; }
   .button[href*=facebook] { background: #3B5998; }
   .button[href*=courses] { background: #ffc600; }
+
+@media only screen and (max-width: 768px){
+
+  .bio{
+    min-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+  }
+
+  .dropdown{
+    width: min-content;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link-title{
+    position: relative;
+    z-index: -1;
+  }
+}
