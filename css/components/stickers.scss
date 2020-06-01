@@ -1,0 +1,51 @@
+$sticker-desktop: #6666ff;
+$sticker-mobile: #eca769;
+$sticker-android: #3e5a3e;
+$sticker-mouse-only: #ffc0cb;
+$sticker-read-only: #808080;
+$sticker-console-only: #1a1a1a;
+
+@mixin stickers() {
+    margin: 5px;
+    padding: 5px;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.sticker-mobile{
+    color: #1a1a1a;
+    background-color: $sticker-mobile;
+    @include stickers();
+}
+
+.sticker-desktop{
+    color: #d5d5ff;
+    background-color: $sticker-desktop;
+    @include stickers();
+}
+
+.sticker-mouse-only{
+    color: #1a1a1a;
+    background-color: $sticker-mouse-only;
+    @include stickers();
+}
+
+.sticker-android-only{
+    color: #ffffff;
+    background-color: $sticker-android;
+    @include stickers();
+}
+
+.sticker-read-only{
+    color: #ffffff;
+    background-color: $sticker-read-only;
+    @include stickers();
+}
+
+.sticker-console-only{
+    color: #66b466;
+    background-color: $sticker-console-only;
+    @include stickers();
+}

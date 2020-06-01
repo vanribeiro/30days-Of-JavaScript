@@ -7,11 +7,14 @@
         .row{
 
             .card{
-                height: 90%;
-                margin: 10px;
+                height: 95%;
+                margin: 15px;
                 background-color: $backgroung-card;
                 box-shadow: 1px 1px 5px #000000;
                 text-align: center;
+                display: flex;
+                flex-direction: column;
+
 
                 figure a{
                     color: $color-font;
@@ -25,8 +28,23 @@
                     }
                 }
 
-                main{
+                .card-content{
                     padding: 15px;
+                    height: 100%;
+                    margin-bottom: 20px;
+
+                    .card-links{
+                        display: flex;
+                        align-items: end;
+                        height: inherit;
+                        justify-content: center;
+                        padding: 5px;
+
+                        a{
+                            margin-left: 3px;
+                            margin-right: 3px;
+                        }
+                    }
                 }
             }
         }
@@ -35,18 +53,36 @@
 }
 
 @media only screen and (max-width: 768px){
+    
     .main-content{
         .row {
             display: flex;
             flex-direction: column;
         }
+
+        .card-content{
+            padding: 5px;
+            height: 100%;
+            margin-bottom: 20px;
+
+            .stickers{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card-links{
+                padding: 1px;
+            }
+        }
     }
 }
 
 @media only screen and (min-width: 769px){
+
     .main-content{
         .row {
             display: flex;
         }
     }
+
 }

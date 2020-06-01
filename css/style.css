@@ -67,11 +67,13 @@
   padding: 15px;
 }
 .main-content .container .row .card {
-  height: 90%;
-  margin: 10px;
+  height: 95%;
+  margin: 15px;
   background-color: #ffffff;
   box-shadow: 1px 1px 5px #000000;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .main-content .container .row .card figure a {
   color: #160a26;
@@ -82,14 +84,39 @@
 .main-content .container .row .card figcaption h2 {
   font-size: 1.5em;
 }
-.main-content .container .row .card main {
+.main-content .container .row .card .card-content {
   padding: 15px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.main-content .container .row .card .card-content .card-links {
+  display: flex;
+  align-items: end;
+  height: inherit;
+  justify-content: center;
+  padding: 5px;
+}
+.main-content .container .row .card .card-content .card-links a {
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 @media only screen and (max-width: 768px) {
   .main-content .row {
     display: flex;
     flex-direction: column;
+  }
+  .main-content .card-content {
+    padding: 5px;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  .main-content .card-content .stickers {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .card-content .card-links {
+    padding: 1px;
   }
 }
 @media only screen and (min-width: 769px) {
@@ -105,6 +132,72 @@ footer .container {
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 0.875em;
+}
+
+.sticker-mobile {
+  color: #1a1a1a;
+  background-color: #eca769;
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.sticker-desktop {
+  color: #d5d5ff;
+  background-color: #6666ff;
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.sticker-mouse-only {
+  color: #1a1a1a;
+  background-color: #ffc0cb;
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.sticker-android-only {
+  color: #ffffff;
+  background-color: #3e5a3e;
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.sticker-read-only {
+  color: #ffffff;
+  background-color: #808080;
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.sticker-console-only {
+  color: #66b466;
+  background-color: #1a1a1a;
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 * {
