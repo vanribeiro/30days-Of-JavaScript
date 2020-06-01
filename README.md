@@ -32,9 +32,10 @@ Nº | Day        | Description            | Status
 22|05/28/2020 |[Follow Along Link Highlighter](challenge-files/22%20-%20Follow%20Along%20Link%20Highlighter/) | ✅
 23|05/29/2020 |[Speech Synthesis](challenge-files/23%20-%20Speech%20Synthesis/) | ✅
 24|05/30/2020 |[Sticky Nav](challenge-files/24%20-%20Sticky%20Nav/) | ✅
+25|05/31/2020 |[Event Capture, Propagation, Bubbling and Once](challenge-files/25%20-%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/) | ✅
 
 ___
-
+25 - 
 
 |Captions - Status |
 |---------|
