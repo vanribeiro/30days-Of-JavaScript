@@ -11,6 +11,7 @@ html {
     margin: 0;
     color: #1a1a1a;
     min-height: 100vh;
+    background-repeat: no-repeat;
     background:
       linear-gradient(45deg, hsla(340, 100%, 55%, 1) 0%, hsla(340, 100%, 55%, 0) 70%),
       linear-gradient(135deg, hsla(225, 95%, 50%, 1) 10%, hsla(225, 95%, 50%, 0) 80%),
@@ -26,7 +27,7 @@ html {
 
   h2 {
     margin-top: 0;
-    padding-top: .8em;
+    padding-top: 0.8em;
   }
 
   nav {
@@ -164,8 +165,12 @@ html {
   }
 
   nav ul{
-    display: flex;
-    flex-direction: column;
+    display: block;
+  }
+
+  .cool > li > a {
+    font-size: 0.875em;
+    margin: 5px;
   }
 
   .link-title{
