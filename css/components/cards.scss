@@ -30,14 +30,13 @@
 
                 .card-content{
                     padding: 15px;
-                    height: 100%;
+                    height: auto;
                     margin-bottom: 20px;
 
                     .stickers{
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: center;
-                        // flex-direction: column;
                     }
 
                     .card-links{
