@@ -34,9 +34,8 @@ Nº | Day        | Description            | Status
 24|05/30/2020 |[Sticky Nav](challenge-files/24%20-%20Sticky%20Nav/) | ✅
 25|05/31/2020 |[Event Capture, Propagation, Bubbling and Once](challenge-files/25%20-%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/) | ✅
 26|06/01/2020 |[Stripe Follow Along Nav](challenge-files/26%20-%20Stripe%20Follow%20Along%20Nav/) | ✅
-
+27|06/02/2020 |[Click and Drag](challenge-files/27%20-%20Click%20and%20Drag/) | ✅
 ___
-
 
 |Captions - Status |
 |---------|

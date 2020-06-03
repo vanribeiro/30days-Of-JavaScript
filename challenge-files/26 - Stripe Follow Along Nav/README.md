@@ -1,4 +1,4 @@
-# Day 26 - 26 - Stripe Follow Along Nav ✅
+# Day 26 - Stripe Follow Along Nav ✅
 
 **Date:** 06/01/2020
 
@@ -6,7 +6,7 @@
 
 ## About JavaScript
 
-
+Sorry, guys... No notes today! 
 
 ## Conclusion
 
