@@ -4,7 +4,7 @@ Because I need to improve my VanillaJS skills, I decided to do the [WesBos chall
 
 **Start:** 04/27/2020
 
-You see the demo examples [here](https://vanribeiro-30daysofjavascript.netlify.app/). 😉
+You can see the demo examples [here](https://vanribeiro-30daysofjavascript.netlify.app/). 😉
 
 Nº | Day        | Description            | Status
 --|-----------|------------------------|---
@@ -35,6 +35,7 @@ Nº | Day        | Description            | Status
 25|05/31/2020 |[Event Capture, Propagation, Bubbling and Once](challenge-files/25%20-%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/) | ✅
 26|06/01/2020 |[Stripe Follow Along Nav](challenge-files/26%20-%20Stripe%20Follow%20Along%20Nav/) | ✅
 27|06/02/2020 |[Click and Drag](challenge-files/27%20-%20Click%20and%20Drag/) | ✅
+28|06/03/2020 |[Video Speed Controller](challenge-files/28%20-%20Video%20Speed%20Controller/) | ✅
 ___
 
 |Captions - Status |
