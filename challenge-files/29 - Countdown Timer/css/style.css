@@ -80,3 +80,14 @@ body {
   font-size: 4rem;
   color: white;
 }
+
+
+@media only screen and (max-width: 600px){
+  .timer__controls{
+    flex-wrap: wrap-reverse;
+  }
+
+  .display__time-left{
+    font-size: 10rem;
+  }
+}

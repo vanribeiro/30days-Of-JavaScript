@@ -36,6 +36,7 @@ Nº | Day        | Description            | Status
 26|06/01/2020 |[Stripe Follow Along Nav](challenge-files/26%20-%20Stripe%20Follow%20Along%20Nav/) | ✅
 27|06/02/2020 |[Click and Drag](challenge-files/27%20-%20Click%20and%20Drag/) | ✅
 28|06/03/2020 |[Video Speed Controller](challenge-files/28%20-%20Video%20Speed%20Controller/) | ✅
+29|06/04/2020 |[Countdown Timer](challenge-files/29%20-%20Countdown%20Timer/) | ✅
 ___
 
 |Captions - Status |
