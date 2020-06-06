@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: #ffc600;
+  background: #eca769;
 }
 
 *, *:before, *:after {
@@ -11,6 +11,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  outline: 0;
   font-family: 'Amatic SC', cursive;
 }
 
@@ -19,13 +20,15 @@ h1 {
   font-size: 10rem;
   line-height: 1;
   margin-bottom: 0;
+  color: #1a1a1a;
 }
 
 .score {
   background: rgba(255,255,255,0.2);
-  padding: 0 3rem;
+  padding: 0 25px;
   line-height: 1;
   border-radius: 1rem;
+  color: #1a1a1a;
 }
 
 .game {
@@ -34,6 +37,9 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-bottom: 25px;
+  cursor: url('gavel.png'), auto;
+  /* cursor: pointer; */
 }
 
 .hole {
@@ -44,7 +50,7 @@ h1 {
 
 .hole:after {
   display: block;
-  background: url(dirt.svg) bottom center no-repeat;
+  background: url('./../images/dirt.svg') bottom center no-repeat;
   background-size: contain;
   content: '';
   width: 100%;
@@ -55,7 +61,7 @@ h1 {
 }
 
 .mole {
-  background: url('mole.svg') bottom center no-repeat;
+  background: url('./../images/mole.svg') bottom center no-repeat;
   background-size: 60%;
   position: absolute;
   top: 100%;
@@ -66,4 +72,41 @@ h1 {
 
 .hole.up .mole {
   top: 0;
+}
+
+.start-button{
+  background-color: #008000;
+  color: #ebebeb;
+  font-size: 2rem;
+  border: none;
+  padding: 15px;
+  border: 3px solid #008000;
+  transition: all 0.5s ease-in;
+}
+
+.controllers{
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 768px){
+
+  h1{
+    font-size: 5rem;
+  }
+
+  .game{
+    width: 100%;
+  }
+
+  .hole::after {
+    height: 40px;
+    bottom: -15px;
+  }
+
+  .mole{
+    background-size: 50%;
+  }
 }
