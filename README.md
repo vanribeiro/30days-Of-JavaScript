@@ -4,7 +4,7 @@ Because I need to improve my VanillaJS skills, I decided to do the [WesBos chall
 
 **Start:** 04/27/2020
 
-**Finish** 06/05/2020
+**End:** 06/05/2020
 
 You can see the demo examples [here](https://vanribeiro-30daysofjavascript.netlify.app/). 😉
 
