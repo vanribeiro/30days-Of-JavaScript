@@ -1,4 +1,4 @@
-# Day 09 - Fun with HTML5 Canvas ✅
+# Day 09 - Dev Tools Domination ✅
 
 **Date:** 05/11/2020
 
